@@ -1,0 +1,107 @@
+note: Generated from recorded traffic using edge 142.0.3595.90
+configuration:
+  dataset: programing.csv
+  profile: edge
+  vars:
+    APP_Test_App_URL: https://www.w3schools.com/
+    Excercises_filter_input:
+      expr: programing_languages
+      type: column
+steps:
+  - open:
+      note: Open Test App
+      url: '${APP_Test_App_URL}'
+  - with:
+      note: W3Schools Online Web Tutorials Programming Side Bar
+      steps:
+        - click:
+            shot: W3Schools Online Web Tutorials_aoa7ya.dti.jpeg#872
+            object: html.a
+            identifiers:
+              - properties:
+                  - content:
+                      - val: HTML
+        - click:
+            shot: HTML Tutorial_pis75h.dti.jpeg#639
+            object: html.a
+            identifiers:
+              - properties:
+                  - content:
+                      - val: CSS
+        - click:
+            shot: CSS Tutorial_cg2don.dti.jpeg#702
+            object: html.a
+            identifiers:
+              - properties:
+                  - content:
+                      - val: SQL
+  - with:
+      note: HTML Exercises
+      steps:
+        - click:
+            shot: JavaScript Tutorial_m4j7pz.dti.jpeg#531
+            object: html.a
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Exercises
+        - click:
+            shot: JavaScript Tutorial_5ynq2e.dti.jpeg#1291
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - label:
+                      - val: Excercises filter input
+        - type:
+            shot: JavaScript Tutorial_zrjsgg.dti.jpeg#2169
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - label:
+                      - val: Excercises filter input
+            value: '${Excercises_filter_input}'
+        - if:
+            condition: Excercises_filter_input == 'HTML'
+            steps:
+              - click:
+                  shot: JavaScript Tutorial_ovfepe.dti.jpeg#3796
+                  object: html.a
+                  identifiers:
+                    - properties:
+                        - content:
+                            - val: Exercise
+              - with:
+                  note: Python Exercises
+                  steps:
+                    - click:
+                        shot: HTML Exercises_gonw5z.dti.jpeg#775
+                        object: html.a
+                        identifiers:
+                          - properties:
+                              - content:
+                                  - val: Exercises
+                    - click:
+                        shot: HTML Exercises_mzxphj.dti.jpeg#1712
+                        object: html.inputtext
+                        identifiers:
+                          - properties:
+                              - label:
+                                  - val: Excercises filter input
+                    - type:
+                        shot: HTML Exercises_6wjq7w.dti.jpeg#2764
+                        object: html.inputtext
+                        identifiers:
+                          - properties:
+                              - label:
+                                  - val: Excercises filter input
+                        value: '${Excercises_filter_input}'
+                    - if:
+                        condition: Excercises_filter_input == 'PYTHON'
+                        steps:
+                          - click:
+                              shot: HTML Exercises_wxuobv.dti.jpeg#4745
+                              object: html.a
+                              identifiers:
+                                - properties:
+                                    - content:
+                                        - val: Python

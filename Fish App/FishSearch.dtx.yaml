@@ -1,0 +1,62 @@
+note: Generated from recorded traffic using edge 142.0.3595.94
+configuration:
+  profile: edge
+  vars:
+    APP_Fish_App_URL: https://thai-sea-citizen-web.21hajvtnk7k6.us-south.codeengine.appdomain.cloud/
+    ค้นหา_Whale_Shark: Whale
+steps:
+  - open:
+      note: Open Fish App
+      url: '${APP_Fish_App_URL}'
+  - with:
+      note: หน้าแรก | thai sea citizen
+      steps:
+        - click:
+            shot: หน้าแรก _ thai sea citizen_ilh3vg.dti.jpeg#391
+            object: html.a
+            identifiers:
+              - properties:
+                  - content:
+                      - val: หนังสือปลา
+  - with:
+      note: หนังสือปลา | thai sea citizen
+      steps:
+        - type:
+            enabled: 'false'
+            shot: หนังสือปลา _ thai sea citizen_rppcbx.dti.jpeg#1131
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - placeholder:
+                      - val: ค้นหา Whale Shark...
+                  - xpath:
+                      - val: //search[@id='search-fish']/input
+            value: ${ค้นหา_Whale_Shark}
+        - type:
+            shot: หนังสือปลา _ thai sea citizen_rppcbx.dti.jpeg#1131
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - tagName:
+                      - val: input
+            value: ${ค้นหา_Whale_Shark}
+        - click:
+            shot: หนังสือปลา _ thai sea citizen_abkxry.dti.jpeg#1631
+            object: html.img
+            identifiers:
+              - properties:
+                  - src:
+                      - val: /_next/image?url=https%3A%2F%2Ffish-image-bucket.s3.jp-tok.cloud-object-storage.appdomain.cloud%2Ffish-image%2FWhale-shark%2Fwhale-shark-001.png&w=1080&q=75
+  - with:
+      note: Whale shark | thai sea citizen
+      steps:
+        - click:
+            shot: Whale shark _ thai sea citizen_f37e63.dti.jpeg#1736
+            object: html.div
+            identifiers:
+              - properties:
+                  - content:
+                      - val: |-
+                          ความยาวเฉลี่ย
+
+                          1200 cm

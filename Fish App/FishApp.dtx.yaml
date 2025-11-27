@@ -1,0 +1,38 @@
+note: Generated from recorded traffic using edge 142.0.3595.90
+configuration:
+  profile: edge
+  vars:
+    APP_BTResorts_Application_URL: https://thai-sea-citizen-web.21hajvtnk7k6.us-south.codeengine.appdomain.cloud/
+    Humpback_Grouper: Whale
+steps:
+  - open:
+      note: Open BTResorts Application
+      url: '${APP_BTResorts_Application_URL}'
+  - with:
+      note: หน้าแรก | thai sea citizen
+      steps:
+        - click:
+            shot: หน้าแรก _ thai sea citizen_jt6rwn.dti.jpeg#132
+            object: html.a
+            identifiers:
+              - properties:
+                  - content:
+                      - val: หนังสือปลา
+  - with:
+      note: หนังสือปลา | thai sea citizen
+      steps:
+        - type:
+            shot: หนังสือปลา _ thai sea citizen_ii76bk.dti.jpeg#992
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - placeholder:
+                      - val: '!เกมส์'
+            value: '${Humpback_Grouper}'
+        - click:
+            shot: หนังสือปลา _ thai sea citizen_shi6t5.dti.jpeg#1492
+            object: html.img
+            identifiers:
+              - properties:
+                  - src:
+                      - val: /_next/image?url=https%3A%2F%2Ffish-image-bucket.s3.jp-tok.cloud-object-storage.appdomain.cloud%2Ffish-image%2FWhale-shark%2Fwhale-shark-001.png&w=1080&q=75

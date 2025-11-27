@@ -1,0 +1,103 @@
+note: Generated from recorded traffic using edge 142.0.3595.94
+configuration:
+  profile: edge
+  vars:
+    APP_W3_URL: https://www.w3schools.com/
+    Excercises_filter_input: javascript
+steps:
+  - open:
+      note: Open W3
+      url: '${APP_W3_URL}'
+  - with:
+      note: W3Schools Online Web Tutorials
+      steps:
+        - click:
+            shot: W3Schools Online Web Tutorials_wcj4b3.dti.jpeg#872
+            object: html.a
+            identifiers:
+              - properties:
+                  - content:
+                      - val: HTML
+        - click:
+            shot: W3Schools Online Web Tutorials_qauthj.dti.jpeg#1687
+            object: html.a
+            identifiers:
+              - properties:
+                  - content:
+                      - val: HTML
+  - with:
+      note: HTML Tutorial
+      steps:
+        - click:
+            shot: HTML Tutorial_hadjzz.dti.jpeg#640
+            object: html.a
+            identifiers:
+              - properties:
+                  - content:
+                      - val: CSS
+  - with:
+      note: CSS Tutorial
+      steps:
+        - click:
+            shot: CSS Tutorial_4mt6ig.dti.jpeg#680
+            object: html.a
+            identifiers:
+              - properties:
+                  - content:
+                      - val: JAVASCRIPT
+        - click:
+            shot: CSS Tutorial_q56msi.dti.jpeg#1303
+            object: html.a
+            identifiers:
+              - properties:
+                  - content:
+                      - val: JAVASCRIPT
+  - with:
+      note: JavaScript Tutorial
+      steps:
+        - click:
+            shot: JavaScript Tutorial_xskbwe.dti.jpeg#607
+            object: html.a
+            identifiers:
+              - properties:
+                  - content:
+                      - val: SQL
+        - click:
+            shot: JavaScript Tutorial_ywsy6a.dti.jpeg#1155
+            object: html.a
+            identifiers:
+              - properties:
+                  - content:
+                      - val: SQL
+  - with:
+      note: SQL Tutorial
+      steps:
+        - click:
+            shot: SQL Tutorial_hkeq3z.dti.jpeg#526
+            object: html.a
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Exercises
+        - click:
+            shot: SQL Tutorial_jlrxiv.dti.jpeg#1187
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - label:
+                      - val: Excercises filter input
+        - type:
+            shot: SQL Tutorial_oiz7sv.dti.jpeg#2008
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - label:
+                      - val: Excercises filter input
+            value: '${Excercises_filter_input}'
+        - click:
+            shot: SQL Tutorial_mfcpxj.dti.jpeg#3535
+            object: html.a
+            identifiers:
+              - properties:
+                  - content:
+                      - val: JavaScript

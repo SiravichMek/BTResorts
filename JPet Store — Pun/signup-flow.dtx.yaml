@@ -1,0 +1,76 @@
+note: Generated from recorded traffic using edge 142.0.3595.94
+configuration:
+  profile: edge
+  vars:
+    APP_JPet_Store_Pun_URL: https://jpetstore.aspectran.com/
+steps:
+  - open:
+      note: Open JPet Store — Pun
+      url: '${APP_JPet_Store_Pun_URL}'
+  - with:
+      note: JPetStore Demo
+      steps:
+        - click:
+            shot: JPetStore Demo_37hzwv.dti.jpeg#372
+            object: html.a
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Sign Up
+            stepTimeout: 1min
+        - open:
+            enabled: 'false'
+            shot: JPetStore Demo_37hzwv.dti.jpeg#372
+            url: https://jpetstore.aspectran.com/account/newAccountForm
+  - with:
+      note: JPetStore Demo
+      steps:
+        - click:
+            shot: JPetStore Demo_c55di6.dti.jpeg#526
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - label:
+                      - val: 'User ID:'
+        - click:
+            shot: JPetStore Demo_gfl433.dti.jpeg#755
+            object: html.inputpassword
+            identifiers:
+              - properties:
+                  - label:
+                      - val: 'New password:'
+        - click:
+            shot: JPetStore Demo_hcc6gr.dti.jpeg#983
+            object: html.inputpassword
+            identifiers:
+              - properties:
+                  - label:
+                      - val: 'Confirm password:'
+        - click:
+            shot: JPetStore Demo_wbfndv.dti.jpeg#1217
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - label:
+                      - val: 'First name:'
+        - click:
+            shot: JPetStore Demo_lwqoxj.dti.jpeg#1418
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - label:
+                      - val: 'User ID:'
+        - click:
+            shot: JPetStore Demo_nn2wgp.dti.jpeg#1627
+            object: html.a
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Sign Up
+        - click:
+            shot: JPetStore Demo_c55di6.dti.jpeg#526
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - label:
+                      - val: 'User ID:'

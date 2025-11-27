@@ -1,0 +1,142 @@
+{
+  "name" : "data_def",
+  "description" : "",
+  "fields" : [ {
+    "name" : "User_ID",
+    "repositoryUrl" : "",
+    "filePath" : "JPet Store App/SignUp Variables/User_ID.cgen"
+  }, {
+    "name" : "Password",
+    "repositoryUrl" : "",
+    "filePath" : "JPet Store App/SignUp Variables/Password.cgen"
+  }, {
+    "name" : "First_Name",
+    "generatorValues" : {
+      "name" : "Name",
+      "version" : "0.0.1",
+      "categoryId" : "00000",
+      "parentGenerator" : null,
+      "globalProperties" : {
+        "randomDistribution" : "false",
+        "duplicatesAllowed" : "true",
+        "blankPercentage" : null
+      },
+      "configurations" : [ {
+        "name" : "Default",
+        "weightage" : 100.0,
+        "properties" : {
+          "title" : "false",
+          "firstName" : "true",
+          "lastName" : "false"
+        }
+      } ]
+    }
+  }, {
+    "name" : "Last_Name",
+    "generatorValues" : {
+      "name" : "Name",
+      "version" : "0.0.1",
+      "categoryId" : "00000",
+      "parentGenerator" : null,
+      "globalProperties" : {
+        "randomDistribution" : "false",
+        "duplicatesAllowed" : "true",
+        "blankPercentage" : null
+      },
+      "configurations" : [ {
+        "name" : "Default",
+        "weightage" : 100.0,
+        "properties" : {
+          "title" : "false",
+          "firstName" : "false",
+          "lastName" : "true"
+        }
+      } ]
+    }
+  }, {
+    "name" : "Phone",
+    "generatorValues" : {
+      "name" : "Phone",
+      "version" : "0.0.1",
+      "categoryId" : "00000",
+      "parentGenerator" : null,
+      "globalProperties" : {
+        "randomDistribution" : "false",
+        "duplicatesAllowed" : "true",
+        "blankPercentage" : "0"
+      },
+      "configurations" : [ {
+        "name" : "Default",
+        "weightage" : 100.0,
+        "properties" : {
+          "format" : "###-###-####",
+          "country" : ""
+        }
+      } ]
+    }
+  }, {
+    "name" : "Address",
+    "generatorValues" : {
+      "name" : "Address",
+      "version" : "0.0.1",
+      "categoryId" : "00000",
+      "parentGenerator" : null,
+      "globalProperties" : {
+        "randomDistribution" : "false",
+        "duplicatesAllowed" : "true",
+        "blankPercentage" : "0"
+      },
+      "configurations" : [ {
+        "name" : "Default",
+        "weightage" : 100.0,
+        "properties" : {
+          "firstLine" : "true",
+          "secondLine" : "true",
+          "city" : "false",
+          "zipCode" : "false",
+          "country" : "false"
+        }
+      } ]
+    }
+  }, {
+    "name" : "City",
+    "repositoryUrl" : "",
+    "filePath" : "JPet Store App/SignUp Variables/City.cgen"
+  }, {
+    "name" : "State",
+    "generatorValues" : {
+      "name" : "Address",
+      "version" : "0.0.1",
+      "categoryId" : "00000",
+      "parentGenerator" : null,
+      "globalProperties" : {
+        "randomDistribution" : "false",
+        "duplicatesAllowed" : "true",
+        "blankPercentage" : "0"
+      },
+      "configurations" : [ {
+        "name" : "Default",
+        "weightage" : 100.0,
+        "properties" : {
+          "firstLine" : "false",
+          "secondLine" : "true",
+          "city" : "false",
+          "zipCode" : "false",
+          "country" : "false"
+        }
+      } ]
+    }
+  }, {
+    "name" : "Zip",
+    "repositoryUrl" : "",
+    "filePath" : "JPet Store App/SignUp Variables/Zip.cgen"
+  }, {
+    "name" : "Country",
+    "repositoryUrl" : "",
+    "filePath" : "JPet Store App/SignUp Variables/Country.cgen"
+  }, {
+    "name" : "Email",
+    "repositoryUrl" : "",
+    "filePath" : "JPet Store App/SignUp Variables/Email.cgen"
+  } ]
+}

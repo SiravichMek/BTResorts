@@ -1,0 +1,19 @@
+note: Generated from recorded traffic using firefox 145.0.2
+configuration:
+  profile: firefox
+  vars:
+    APP_Gamewebport_URL: https://sirasith.net/
+steps:
+  - open:
+      note: Open Gamewebport
+      url: '${APP_Gamewebport_URL}'
+  - with:
+      note: Sirasith's Portfolio | Web Development
+      steps:
+        - click:
+            shot: Sirasith's Portfolio _ Web Development_pssyki.dti.jpeg#328
+            object: html.button
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Projects

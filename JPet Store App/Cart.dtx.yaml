@@ -1,0 +1,94 @@
+note: Generated from recorded traffic using firefox 145.0.2
+configuration:
+  profile: firefox
+  vars:
+    APP_JPet_Store_App_URL: https://jpetstore.aspectran.com
+    TYPE_2: '2'
+steps:
+  - open:
+      note: Open JPet Store App
+      url: '${APP_JPet_Store_App_URL}'
+  - with:
+      note: JPetStore Demo
+      steps:
+        - click:
+            shot: JPetStore Demo_mfu2ev.dti.jpeg#353
+            object: html.a
+            identifiers:
+              - properties:
+                  - href:
+                      - val: /categories/FISH
+  - with:
+      note: JPetStore Demo
+      steps:
+        - click:
+            shot: JPetStore Demo_pgmnws.dti.jpeg#364
+            object: html.a
+            identifiers:
+              - properties:
+                  - content:
+                      - val: FI-SW-01
+  - with:
+      note: JPetStore Demo
+      steps:
+        - click:
+            shot: JPetStore Demo_b2sg5n.dti.jpeg#378
+            object: html.a
+            identifiers:
+              - properties:
+                  - href:
+                      - val: /cart/addItemToCart?itemId=EST-1
+  - with:
+      note: JPetStore Demo
+      steps:
+        - type:
+            shot: JPetStore Demo_qffnco.dti.jpeg#430
+            object: html.inputtextfield
+            identifiers:
+              - properties:
+                  - xpath:
+                      - val: //div[@id='jpetstore-content']/div[2]/form/table/tbody/tr/td[5]/input
+                locators:
+                  - inside:
+                      object: html.body
+                      properties:
+                        - title:
+                            - val: JPetStore Demo
+            value: '${TYPE_2}'
+        - click:
+            shot: JPetStore Demo_ywo57m.dti.jpeg#781
+            object: html.a
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Proceed to Checkout
+  - with:
+      note: JPetStore Demo
+      steps:
+        - click:
+            shot: JPetStore Demo_6gsvpo.dti.jpeg#348
+            object: html.button
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Login
+  - with:
+      note: JPetStore Demo
+      steps:
+        - click:
+            shot: JPetStore Demo_ibaprt.dti.jpeg#543
+            object: html.button
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Continue
+  - with:
+      note: JPetStore Demo
+      steps:
+        - click:
+            shot: JPetStore Demo_ysk6bd.dti.jpeg#546
+            object: html.button
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Confirm
