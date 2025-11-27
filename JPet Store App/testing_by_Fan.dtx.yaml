@@ -1,0 +1,538 @@
+note: Generated from recorded traffic using firefox 145.0.2
+configuration:
+  profile: firefox
+  vars:
+    APP_JPet_Store_App_URL: https://jpetstore.aspectran.com
+    User_ID: abc
+    New_password: '123'
+    Confirm_password: '123'
+    First_name: abcf
+    Last_name: abcl
+    abc: abcd
+    Confirm_password_2: abcd1
+    TYPE_3: dd
+    TYPE_4: '00'
+    TYPE_5: '00'
+    TYPE_6: '00'
+    TYPE_7: '00'
+    TYPE_8: '00'
+    TYPE_9: '00'
+    TYPE_10: '00'
+    dd: dd@gmail.com
+    abcd: abcd123
+    abcd123: abcd1234
+    abcd1234: abcd12347878new
+    Username: abc
+steps:
+  - open:
+      note: Open JPet Store App
+      url: '${APP_JPet_Store_App_URL}'
+  - with:
+      note: JPetStore Demo
+      steps:
+        - click:
+            enabled: 'false'
+            shot: JPetStore Demo_a5ekf3.dti.jpeg#335
+            object: html.header
+            identifiers:
+              - properties:
+                  - content:
+                      - val: |-
+                          A FULL-STACK SAMPLE WEB APPLICATION BUILT ON TOP OF ASPECTRAN AND MYBATIS
+
+                          JPetStore Demo
+
+                          The goal of the JPetStore Demo App is to provide and demonstrate a sample web application that leverages Aspectran and MyBatis.
+        - click:
+            shot: JPetStore Demo_zf3yhn.dti.jpeg#525
+            object: html.a
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Sign Up
+  - with:
+      note: JPetStore Demo
+      steps:
+        - click:
+            shot: JPetStore Demo_csqxxm.dti.jpeg#526
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - label:
+                      - val: 'User ID:'
+        - type:
+            shot: JPetStore Demo_ks4x3u.dti.jpeg#749
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - label:
+                      - val: 'User ID:'
+            value: '${User_ID}'
+        - click:
+            shot: JPetStore Demo_svcopo.dti.jpeg#1201
+            object: html.inputpassword
+            identifiers:
+              - properties:
+                  - label:
+                      - val: 'New password:'
+        - type:
+            shot: JPetStore Demo_qkqd23.dti.jpeg#1424
+            object: html.inputpassword
+            identifiers:
+              - properties:
+                  - label:
+                      - val: 'New password:'
+            value: '${New_password}'
+        - click:
+            shot: JPetStore Demo_6xwlof.dti.jpeg#1875
+            object: html.inputpassword
+            identifiers:
+              - properties:
+                  - label:
+                      - val: 'Confirm password:'
+        - type:
+            shot: JPetStore Demo_nr2rse.dti.jpeg#2098
+            object: html.inputpassword
+            identifiers:
+              - properties:
+                  - label:
+                      - val: 'Confirm password:'
+            value: '${Confirm_password}'
+        - click:
+            shot: JPetStore Demo_s6csos.dti.jpeg#2555
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - label:
+                      - val: 'First name:'
+        - type:
+            shot: JPetStore Demo_7azmij.dti.jpeg#2778
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - label:
+                      - val: 'First name:'
+            value: '${First_name}'
+        - click:
+            shot: JPetStore Demo_cgdk6o.dti.jpeg#3229
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - label:
+                      - val: 'Last name:'
+        - type:
+            shot: JPetStore Demo_euy7u4.dti.jpeg#3452
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - label:
+                      - val: 'Last name:'
+            value: '${Last_name}'
+        - click:
+            shot: JPetStore Demo_nfgx3z.dti.jpeg#3968
+            object: html.button
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Save Account Information
+  - with:
+      note: JPetStore Demo
+      steps:
+        - click:
+            shot: JPetStore Demo_z6hpjt.dti.jpeg#526
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - content:
+                      - val: abc
+        - type:
+            shot: JPetStore Demo_vhfmhs.dti.jpeg#749
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - content:
+                      - val: abc
+            value: '${abc}'
+        - type:
+            shot: JPetStore Demo_tf5w5e.dti.jpeg#1206
+            object: html.inputpassword
+            identifiers:
+              - properties:
+                  - label:
+                      - val: 'Confirm password:'
+            value: '${Confirm_password_2}'
+        - click:
+            shot: JPetStore Demo_gqbx23.dti.jpeg#1673
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - xpath:
+                      - val: //div[@id='jpetstore-content']/div[2]/div/div/form/table[2]/tbody/tr[3]/td[2]/input
+                locators:
+                  - below:
+                      object: html.inputtext
+                      properties:
+                        - label:
+                            - val: 'Last name:'
+        - type:
+            shot: JPetStore Demo_puqcj2.dti.jpeg#1896
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - xpath:
+                      - val: //div[@id='jpetstore-content']/div[2]/div/div/form/table[2]/tbody/tr[3]/td[2]/input
+                locators:
+                  - below:
+                      object: html.inputtext
+                      properties:
+                        - label:
+                            - val: 'Last name:'
+            value: '${TYPE_3}'
+        - click:
+            shot: JPetStore Demo_ybxdqf.dti.jpeg#2347
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - xpath:
+                      - val: //div[@id='jpetstore-content']/div[2]/div/div/form/table[2]/tbody/tr[4]/td[2]/input
+                locators:
+                  - inside:
+                      object: html.td
+                      properties:
+                        - content:
+                            - val: 'must be telephone number format (allowed format:
+                                "999-9999-9999" or "999 9999 9999" or "99999999999")'
+        - type:
+            shot: JPetStore Demo_mnhyzo.dti.jpeg#2570
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - xpath:
+                      - val: //div[@id='jpetstore-content']/div[2]/div/div/form/table[2]/tbody/tr[4]/td[2]/input
+                locators:
+                  - inside:
+                      object: html.td
+                      properties:
+                        - content:
+                            - val: 'must be telephone number format (allowed format:
+                                "999-9999-9999" or "999 9999 9999" or "99999999999")'
+            value: '${TYPE_4}'
+        - click:
+            shot: JPetStore Demo_frujol.dti.jpeg#3021
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - xpath:
+                      - val: //div[@id='jpetstore-content']/div[2]/div/div/form/table[2]/tbody/tr[5]/td[2]/input
+                locators:
+                  - below:
+                      object: html.span
+                      properties:
+                        - content:
+                            - val: 'must be telephone number format (allowed format:
+                                "999-9999-9999" or "999 9999 9999" or "99999999999")'
+        - type:
+            shot: JPetStore Demo_smdr32.dti.jpeg#3244
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - xpath:
+                      - val: //div[@id='jpetstore-content']/div[2]/div/div/form/table[2]/tbody/tr[5]/td[2]/input
+                locators:
+                  - below:
+                      object: html.span
+                      properties:
+                        - content:
+                            - val: 'must be telephone number format (allowed format:
+                                "999-9999-9999" or "999 9999 9999" or "99999999999")'
+            value: '${TYPE_5}'
+        - click:
+            shot: JPetStore Demo_ujvxk2.dti.jpeg#3695
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - xpath:
+                      - val: //div[@id='jpetstore-content']/div[2]/div/div/form/table[2]/tbody/tr[6]/td[2]/input
+                locators:
+                  - inside:
+                      object: html.body
+                      properties:
+                        - title:
+                            - val: JPetStore Demo
+        - type:
+            shot: JPetStore Demo_z2cfd4.dti.jpeg#3918
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - xpath:
+                      - val: //div[@id='jpetstore-content']/div[2]/div/div/form/table[2]/tbody/tr[6]/td[2]/input
+                locators:
+                  - inside:
+                      object: html.body
+                      properties:
+                        - title:
+                            - val: JPetStore Demo
+            value: '${TYPE_6}'
+        - click:
+            shot: JPetStore Demo_t6f7nq.dti.jpeg#4369
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - xpath:
+                      - val: //div[@id='jpetstore-content']/div[2]/div/div/form/table[2]/tbody/tr[7]/td[2]/input
+                locators:
+                  - inside:
+                      object: html.body
+                      properties:
+                        - title:
+                            - val: JPetStore Demo
+        - type:
+            shot: JPetStore Demo_vhpkxa.dti.jpeg#4592
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - xpath:
+                      - val: //div[@id='jpetstore-content']/div[2]/div/div/form/table[2]/tbody/tr[7]/td[2]/input
+                locators:
+                  - inside:
+                      object: html.body
+                      properties:
+                        - title:
+                            - val: JPetStore Demo
+            value: '${TYPE_7}'
+        - click:
+            shot: JPetStore Demo_xvoi7u.dti.jpeg#5043
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - xpath:
+                      - val: //div[@id='jpetstore-content']/div[2]/div/div/form/table[2]/tbody/tr[8]/td[2]/input
+                locators:
+                  - inside:
+                      object: html.body
+                      properties:
+                        - title:
+                            - val: JPetStore Demo
+        - type:
+            shot: JPetStore Demo_cmu6ku.dti.jpeg#5266
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - xpath:
+                      - val: //div[@id='jpetstore-content']/div[2]/div/div/form/table[2]/tbody/tr[8]/td[2]/input
+                locators:
+                  - inside:
+                      object: html.body
+                      properties:
+                        - title:
+                            - val: JPetStore Demo
+            value: '${TYPE_8}'
+        - click:
+            shot: JPetStore Demo_wwygs6.dti.jpeg#5722
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - xpath:
+                      - val: //div[@id='jpetstore-content']/div[2]/div/div/form/table[2]/tbody/tr[10]/td[2]/input
+                locators:
+                  - above:
+                      object: html.select
+                      properties:
+                        - label:
+                            - val: 'Language Preference:'
+        - type:
+            shot: JPetStore Demo_klmf6y.dti.jpeg#5945
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - xpath:
+                      - val: //div[@id='jpetstore-content']/div[2]/div/div/form/table[2]/tbody/tr[10]/td[2]/input
+                locators:
+                  - above:
+                      object: html.select
+                      properties:
+                        - label:
+                            - val: 'Language Preference:'
+            value: '${TYPE_9}'
+        - click:
+            shot: JPetStore Demo_k2dlvd.dti.jpeg#6386
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - xpath:
+                      - val: //div[@id='jpetstore-content']/div[2]/div/div/form/table[2]/tbody/tr[9]/td[2]/input
+                locators:
+                  - above:
+                      object: html.h3
+                      properties:
+                        - content:
+                            - val: Profile Information
+        - type:
+            shot: JPetStore Demo_f4qcew.dti.jpeg#6609
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - xpath:
+                      - val: //div[@id='jpetstore-content']/div[2]/div/div/form/table[2]/tbody/tr[9]/td[2]/input
+                locators:
+                  - above:
+                      object: html.h3
+                      properties:
+                        - content:
+                            - val: Profile Information
+            value: '${TYPE_10}'
+        - click:
+            shot: JPetStore Demo_6qiwo4.dti.jpeg#7090
+            object: html.button
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Save Account Information
+        - click:
+            shot: JPetStore Demo_gonvpv.dti.jpeg#558
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - content:
+                      - val: dd
+        - type:
+            shot: JPetStore Demo_tbcgla.dti.jpeg#781
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - content:
+                      - val: dd
+            value: '${dd}'
+        - click:
+            shot: JPetStore Demo_wjsefw.dti.jpeg#1338
+            object: html.html
+            identifiers:
+              - properties:
+                  - content:
+                      - val: "SAMPLE APPS\nGET INVOLVED\nMONITORING\n \n\nA FULL-STACK\
+                          \ SAMPLE WEB APPLICATION BUILT ON TOP OF ASPECTRAN AND MYBATIS\n\
+                          \nJPetStore Demo\n\nThe goal of the JPetStore Demo App is\
+                          \ to provide and demonstrate a sample web application that\
+                          \ leverages Aspectran and MyBatis.\n\nSample Apps\nJPetStore\
+                          \ Demo\nFish\nDogs\nReptiles\nCats\nBirds\nAppMon\n?\n Sign\
+                          \ In Sign Up\nUser Information\nUser ID:\t\n\nNew password:\t\
+                          \n\nConfirm password:\t\nAccount Information\nFirst name:\t\
+                          \n\nLast name:\t\n\nEmail:\t\nmust be a well-formed email\
+                          \ address\nPhone:\t\n\nAddress 1:\t\n\nAddress 2:\t\n\n\
+                          City:\t\n\nState:\t\n\nZip:\t\n\nCountry:\t\nProfile Information\n\
+                          Language Preference:\t\n\nFavourite Category:\t\n\nEnable\
+                          \ MyList\t\nEnable MyBanner\t\nSave Account Information\n\
+                          \naspectran.com\n\nmybatis.org\n\nABOUT ASPECTRAN\n\nAspectran\
+                          \ is a lightweight, high‑performance framework for building\
+                          \ both simple shell applications and large enterprise web\
+                          \ services on the JVM.\n\nGET INVOLVED\n GitHub\n\nCopyright\
+                          \ © 2018-present The Aspectran Project\n\nPowered by Aspectran\
+                          \ 9.4.0"
+        - click:
+            shot: JPetStore Demo_nwfmmb.dti.jpeg#1515
+            object: html.button
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Save Account Information
+        - click:
+            shot: JPetStore Demo_m3ilng.dti.jpeg#526
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - content:
+                      - val: abcd
+        - click:
+            shot: JPetStore Demo_5rn5zc.dti.jpeg#749
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - content:
+                      - val: abcd
+        - type:
+            shot: JPetStore Demo_vfqfs3.dti.jpeg#972
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - content:
+                      - val: abcd
+            value: '${abcd}'
+        - click:
+            shot: JPetStore Demo_bqb6to.dti.jpeg#1515
+            object: html.button
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Save Account Information
+        - click:
+            shot: JPetStore Demo_72xnwn.dti.jpeg#526
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - content:
+                      - val: abcd123
+        - type:
+            shot: JPetStore Demo_fiwwgh.dti.jpeg#749
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - content:
+                      - val: abcd123
+            value: '${abcd123}'
+        - click:
+            shot: JPetStore Demo_rxo46p.dti.jpeg#1195
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - content:
+                      - val: abcd1234
+        - type:
+            shot: JPetStore Demo_equyxz.dti.jpeg#1418
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - content:
+                      - val: abcd1234
+            value: '${abcd1234}'
+        - click:
+            shot: JPetStore Demo_fzfm2f.dti.jpeg#1961
+            object: html.button
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Save Account Information
+  - with:
+      note: JPetStore Demo
+      steps:
+        - click:
+            shot: JPetStore Demo_cyp57j.dti.jpeg#335
+            object: html.a
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Sign In
+  - with:
+      note: JPetStore Demo
+      steps:
+        - type:
+            shot: JPetStore Demo_4mij3o.dti.jpeg#343
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - label:
+                      - val: 'Username:'
+            value: '${Username}'
+        - click:
+            shot: JPetStore Demo_w43cne.dti.jpeg#612
+            object: html.inputpassword
+            identifiers:
+              - properties:
+                  - label:
+                      - val: 'Password:'
+        - click:
+            shot: JPetStore Demo_dmj3bm.dti.jpeg#747
+            object: html.button
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Login

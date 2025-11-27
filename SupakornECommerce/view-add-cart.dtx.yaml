@@ -1,0 +1,60 @@
+note: Generated from recorded traffic using edge 142.0.3595.94
+configuration:
+  profile: edge
+  vars:
+    APP_SupakornECommerce_URL: https://shop.ouayun.com/th
+steps:
+  - open:
+      note: Open SupakornECommerce
+      url: '${APP_SupakornECommerce_URL}'
+  - with:
+      note: '[ชุดพิเศษ 2 ชิ้น] อ้วยอันโอสถ เอลเดอร์เบอร์รี่ พลัส ผสมวิตามินซี - OUAY-UN
+        ONLINE STORE'
+      steps:
+        - click:
+            shot: '[ชุดพิเศษ 2 ชิ้น] อ้วยอันโอสถ เอลเดอร์เบอร์รี่ พ_dchh4z.dti.jpeg#726'
+            object: html.span
+            identifiers:
+              - properties:
+                  - xpath:
+                      - val: //div[@id='app']/div[3]/div[2]/div/div[2]/div/div[2]/div/div/div/div[2]/button/span
+                locators:
+                  - inside:
+                      object: html.div
+                      properties:
+                        - content:
+                            - val: จำนวน
+        - click:
+            shot: '[ชุดพิเศษ 2 ชิ้น] อ้วยอันโอสถ เอลเดอร์เบอร์รี่ พ_pwlnya.dti.jpeg#1035'
+            object: html.button
+            identifiers:
+              - properties:
+                  - content:
+                      - val: เพิ่มสินค้าลงตะกร้า
+        - click:
+            shot: '[ชุดพิเศษ 2 ชิ้น] อ้วยอันโอสถ เอลเดอร์เบอร์รี่ พ_7lrwb3.dti.jpeg#1527'
+            object: html.button
+            identifiers:
+              - properties:
+                  - content:
+                      - val: ดูสินค้าเพิ่มเติม
+        - click:
+            shot: '[ชุดพิเศษ 2 ชิ้น] อ้วยอันโอสถ เอลเดอร์เบอร์รี่ พ_m4kkmo.dti.jpeg#1552'
+            object: html.span
+            identifiers:
+              - properties:
+                  - xpath:
+                      - val: //div[@id='app']/div[3]/div/header/div/div/div[2]/div[3]/button/span
+                locators:
+                  - below:
+                      object: html.span
+                      properties:
+                        - content:
+                            - val: '2'
+        - click:
+            shot: '[ชุดพิเศษ 2 ชิ้น] อ้วยอันโอสถ เอลเดอร์เบอร์รี่ พ_vnty4t.dti.jpeg#1858'
+            object: html.button
+            identifiers:
+              - properties:
+                  - content:
+                      - val: ×
