@@ -1,0 +1,35 @@
+{
+  "name" : "data_def",
+  "description" : "",
+  "fields" : [ {
+    "name" : "Name",
+    "generatorValues" : {
+      "name" : "Name",
+      "version" : "0.0.1",
+      "categoryId" : "00000",
+      "parentGenerator" : null,
+      "globalProperties" : {
+        "randomDistribution" : "false",
+        "duplicatesAllowed" : "true",
+        "blankPercentage" : null
+      },
+      "configurations" : [ {
+        "name" : "Default",
+        "weightage" : 100.0,
+        "properties" : {
+          "title" : "false",
+          "firstName" : "true",
+          "lastName" : "false"
+        }
+      } ]
+    }
+  }, {
+    "name" : "Email",
+    "repositoryUrl" : "",
+    "filePath" : "JPet Store App/SignUp Variables/Email.cgen"
+  }, {
+    "name" : "Password",
+    "repositoryUrl" : "",
+    "filePath" : "JPet Store App/SignUp Variables/Password.cgen"
+  } ]
+}

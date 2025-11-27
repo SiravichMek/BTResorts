@@ -1,12 +1,18 @@
 note: Generated from recorded traffic using firefox 145.0.2
 configuration:
+  dataset: sample_users.csv
   profile: firefox
   vars:
     APP_Fish_App_URL: https://thai-sea-citizen-web.21hajvtnk7k6.us-south.codeengine.appdomain.cloud/
-    ชื่อ_นามสกุล: xxx
-    อีเมล: x@gmail.com
-    กรอกรหัสผ่านของคุณ: Mek!12345
-    กรอกรหัสผ่านอีกครั้ง: Mek!12345
+    password:
+      expr: Password
+      type: column
+    Name:
+      expr: Name
+      type: column
+    Email:
+      expr: Email
+      type: column
 steps:
   - open:
       note: Open Fish App
@@ -15,7 +21,17 @@ steps:
       note: หน้าแรก | thai sea citizen
       steps:
         - click:
-            shot: หน้าแรก _ thai sea citizen_qybnpb.dti.jpeg#159
+            shot: หน้าแรก _ thai sea citizen_pwllgq.dti.jpeg#288
+            object: html.a
+            identifiers:
+              - properties:
+                  - content:
+                      - val: เข้าสู่ระบบ
+  - with:
+      note: กดสมัคร | thai sea citizen
+      steps:
+        - click:
+            shot: เข้าสู่ระบบ _ thai sea citizen_mpqx32.dti.jpeg#644
             object: html.a
             identifiers:
               - properties:
@@ -25,68 +41,90 @@ steps:
       note: ลงทะเบียน | thai sea citizen
       steps:
         - click:
-            shot: ลงทะเบียน _ thai sea citizen_ftbni4.dti.jpeg#511
+            shot: ลงทะเบียน _ thai sea citizen_wzi7vk.dti.jpeg#699
             object: html.inputtext
             identifiers:
               - properties:
                   - label:
                       - val: ชื่อ-นามสกุล
         - type:
-            shot: ลงทะเบียน _ thai sea citizen_qiq2qt.dti.jpeg#593
+            shot: ลงทะเบียน _ thai sea citizen_4j3u4z.dti.jpeg#781
             object: html.inputtext
             identifiers:
               - properties:
                   - label:
                       - val: ชื่อ-นามสกุล
-            value: ${ชื่อ_นามสกุล}
+            value: '${Name}'
         - click:
-            shot: ลงทะเบียน _ thai sea citizen_exkyeu.dti.jpeg#760
+            shot: ลงทะเบียน _ thai sea citizen_zzbvzr.dti.jpeg#948
             object: html.inputemail
             identifiers:
               - properties:
                   - label:
                       - val: อีเมล
         - type:
-            shot: ลงทะเบียน _ thai sea citizen_juw6cv.dti.jpeg#842
+            shot: ลงทะเบียน _ thai sea citizen_nfuxxf.dti.jpeg#1030
             object: html.inputemail
             identifiers:
               - properties:
                   - label:
                       - val: อีเมล
-            value: ${อีเมล}
+            value: '${Email}'
         - click:
-            shot: ลงทะเบียน _ thai sea citizen_6rl7iy.dti.jpeg#1009
+            shot: ลงทะเบียน _ thai sea citizen_oereta.dti.jpeg#1197
             object: html.inputpassword
             identifiers:
               - properties:
                   - placeholder:
                       - val: กรอกรหัสผ่านของคุณ
         - type:
-            shot: ลงทะเบียน _ thai sea citizen_u6vhvw.dti.jpeg#1091
+            shot: ลงทะเบียน _ thai sea citizen_ps4fcn.dti.jpeg#1279
             object: html.inputpassword
             identifiers:
               - properties:
                   - placeholder:
                       - val: กรอกรหัสผ่านของคุณ
-            value: ${กรอกรหัสผ่านของคุณ}
+            value: '${password}'
         - click:
-            shot: ลงทะเบียน _ thai sea citizen_ecpgl4.dti.jpeg#1325
+            shot: ลงทะเบียน _ thai sea citizen_7rdmry.dti.jpeg#1513
             object: html.inputpassword
             identifiers:
               - properties:
                   - placeholder:
                       - val: กรอกรหัสผ่านอีกครั้ง
         - type:
-            shot: ลงทะเบียน _ thai sea citizen_u2jrig.dti.jpeg#1437
+            shot: ลงทะเบียน _ thai sea citizen_ztao6o.dti.jpeg#1625
             object: html.inputpassword
             identifiers:
               - properties:
                   - placeholder:
                       - val: กรอกรหัสผ่านอีกครั้ง
-            value: ${กรอกรหัสผ่านอีกครั้ง}
+            value: '${password}'
         - click:
-            shot: ลงทะเบียน _ thai sea citizen_p2vn3s.dti.jpeg#1671
-            object: html.button
+            shot: ลงทะเบียน _ thai sea citizen_b6ibvt.dti.jpeg#1858
+            object: html.span
+            identifiers:
+              - properties:
+                  - content:
+                      - val: สมัครสมาชิก
+  - with:
+      enabled: 'false'
+      note: หน้าแรก | thai sea citizen
+      steps:
+        - click:
+            shot: หน้าแรก _ thai sea citizen_r3sbuv.dti.jpeg#1904
+            object: html.a
+            identifiers:
+              - properties:
+                  - content:
+                      - val: เข้าสู่ระบบ
+  - with:
+      enabled: 'false'
+      note: กดสมัคร | thai sea citizen
+      steps:
+        - click:
+            shot: เข้าสู่ระบบ _ thai sea citizen_mpqx32.dti.jpeg#644
+            object: html.a
             identifiers:
               - properties:
                   - content:

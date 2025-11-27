@@ -1,0 +1,97 @@
+note: Generated from recorded traffic using firefox 145.0.2
+configuration:
+  profile: firefox
+  vars:
+    APP_JPet_Store_App_URL: https://jpetstore.aspectran.com
+    User_ID: qwe
+    New_password: '123'
+    Confirm_password: '123'
+steps:
+  - open:
+      note: Open JPet Store App
+      url: '${APP_JPet_Store_App_URL}'
+  - with:
+      note: JPetStore Demo
+      steps:
+        - click:
+            shot: JPetStore Demo_nwj7o7.dti.jpeg#353
+            object: html.a
+            identifiers:
+              - properties:
+                  - xpath:
+                      - val: //div[@id='jpetstore-content']/div/div/div/ul/li/a
+  - with:
+      note: JPetStore Demo
+      steps:
+        - click:
+            shot: JPetStore Demo_tix7m4.dti.jpeg#364
+            object: html.a
+            identifiers:
+              - properties:
+                  - content:
+                      - val: FI-SW-01
+  - with:
+      note: JPetStore Demo
+      steps:
+        - click:
+            shot: JPetStore Demo_hkdbfm.dti.jpeg#354
+            object: html.a
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Sign Up
+  - with:
+      note: JPetStore Demo
+      steps:
+        - click:
+            shot: JPetStore Demo_maz6im.dti.jpeg#526
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - label:
+                      - val: 'User ID:'
+        - type:
+            shot: JPetStore Demo_oxsnqs.dti.jpeg#749
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - label:
+                      - val: 'User ID:'
+            value: '${User_ID}'
+        - click:
+            shot: JPetStore Demo_rbrzsy.dti.jpeg#1201
+            object: html.inputpassword
+            identifiers:
+              - properties:
+                  - label:
+                      - val: 'New password:'
+        - type:
+            shot: JPetStore Demo_pmamsu.dti.jpeg#1424
+            object: html.inputpassword
+            identifiers:
+              - properties:
+                  - label:
+                      - val: 'New password:'
+            value: '${New_password}'
+        - click:
+            shot: JPetStore Demo_ah4tl5.dti.jpeg#1875
+            object: html.inputpassword
+            identifiers:
+              - properties:
+                  - label:
+                      - val: 'Confirm password:'
+        - type:
+            shot: JPetStore Demo_lqm2lm.dti.jpeg#2098
+            object: html.inputpassword
+            identifiers:
+              - properties:
+                  - label:
+                      - val: 'Confirm password:'
+            value: '${Confirm_password}'
+        - click:
+            shot: JPetStore Demo_ayrxjs.dti.jpeg#2630
+            object: html.button
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Save Account Information
