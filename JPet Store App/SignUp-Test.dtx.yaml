@@ -381,7 +381,7 @@ steps:
                   - content:
                       - val: Login
   - with:
-      note: JPetStore Demo
+      note: JPetStore Demo เปิดบัญชี
       steps:
         - click:
             shot: JPetStore Demo_olelx7.dti.jpeg#385
@@ -396,10 +396,3 @@ steps:
                       properties:
                         - content:
                             - val: 0 My Orders
-        - click:
-            shot: JPetStore Demo_26zzzr.dti.jpeg#545
-            object: html.a
-            identifiers:
-              - properties:
-                  - content:
-                      - val: My Account
