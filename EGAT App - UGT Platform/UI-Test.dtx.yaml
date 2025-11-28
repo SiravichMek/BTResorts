@@ -1,0 +1,99 @@
+note: Generated from recorded traffic using firefox 145.0.2
+configuration:
+  profile: firefox
+  vars:
+    APP_EGAT_App_URL: https://ugt-thai.com/platform/
+    Your_Gateway_to_Empowering_Sustainability: x@gmail.com
+    Password: '12345'
+    test: '12345678'
+steps:
+  - open:
+      note: Open EGAT App
+      url: '${APP_EGAT_App_URL}'
+  - with:
+      note: UGT PLATFORM
+      steps:
+        - click:
+            shot: UGT PLATFORM_m27i4g.dti.jpeg#29
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - label:
+                      - val: Your Gateway to Empowering Sustainability
+        - type:
+            shot: UGT PLATFORM_2f6mt5.dti.jpeg#53
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - label:
+                      - val: Your Gateway to Empowering Sustainability
+            value: '${Your_Gateway_to_Empowering_Sustainability}'
+        - click:
+            shot: UGT PLATFORM_axi4bo.dti.jpeg#103
+            object: html.inputpassword
+            identifiers:
+              - properties:
+                  - placeholder:
+                      - val: Password
+        - type:
+            shot: UGT PLATFORM_ijsrcm.dti.jpeg#127
+            object: html.inputpassword
+            identifiers:
+              - properties:
+                  - placeholder:
+                      - val: Password
+            value: '${Password}'
+        - click:
+            shot: UGT PLATFORM_dfb2gu.dti.jpeg#181
+            object: html.button
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Sign in
+        - verify:
+            shot: UGT PLATFORM_pgx72y.dti.jpeg#199
+            object: html.p
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Password must be at least 8 characters
+            properties:
+              - content:
+                  - val: Password must be at least 8 characters
+        - click:
+            shot: UGT PLATFORM_pgx72y.dti.jpeg#199
+            object: html.inputpassword
+            identifiers:
+              - properties:
+                  - content:
+                      - val: '12345'
+        - click:
+            shot: UGT PLATFORM_jleatz.dti.jpeg#274
+            object: html.inputpassword
+            identifiers:
+              - properties:
+                  - content:
+                      - val: '12345'
+            use: double_click
+        - type:
+            shot: UGT PLATFORM_indqi6.dti.jpeg#299
+            object: html.inputpassword
+            identifiers:
+              - properties:
+                  - content:
+                      - val: '12345'
+            value: '${test}'
+        - click:
+            shot: UGT PLATFORM_gnvsii.dti.jpeg#354
+            object: html.button
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Sign in
+        - click:
+            shot: UGT PLATFORM_yqzacs.dti.jpeg#396
+            object: html.button
+            identifiers:
+              - properties:
+                  - content:
+                      - val: OK

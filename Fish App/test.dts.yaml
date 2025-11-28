@@ -1,0 +1,3 @@
+tests:
+  - FishSearch.dtx.yaml
+  - signup-test.dtx.yaml

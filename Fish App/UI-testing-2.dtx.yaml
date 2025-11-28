@@ -1,0 +1,39 @@
+note: Generated from recorded traffic using firefox 145.0.2
+configuration:
+  profile: firefox
+  vars:
+    APP_Fish_App_URL: https://thai-sea-citizen-web.21hajvtnk7k6.us-south.codeengine.appdomain.cloud/
+steps:
+  - open:
+      note: Open Fish App
+      url: '${APP_Fish_App_URL}'
+  - with:
+      note: หน้าแรก | thai sea citizen
+      steps:
+        - click:
+            shot: หน้าแรก _ thai sea citizen_r7nvqm.dti.jpeg#139
+            object: html.a
+            identifiers:
+              - properties:
+                  - content:
+                      - val: หนังสือปลา
+  - with:
+      note: หนังสือปลา | thai sea citizen
+      steps:
+        - click:
+            shot: หนังสือปลา _ thai sea citizen_achfss.dti.jpeg#588
+            object: html.a
+            identifiers:
+              - properties:
+                  - content:
+                      - val: ภารกิจ
+  - with:
+      note: หน้าแรก | thai sea citizen
+      steps:
+        - click:
+            shot: หน้าแรก _ thai sea citizen_h66bpq.dti.jpeg#981
+            object: html.a
+            identifiers:
+              - properties:
+                  - content:
+                      - val: คุยเรื่องปลา
